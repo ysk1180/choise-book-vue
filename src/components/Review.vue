@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import axios from 'axios'
+import axios from '@/lib/axios'
 
 export default defineComponent({
   name: 'Review',
@@ -28,7 +28,7 @@ export default defineComponent({
   async mounted() {
     if (this.site === '楽天ブックス' || this.link) return
 
-    const response = await axios.get(`http://localhost:3000/amazon/${this.isbn}`)
+    const response = await axios.get(`/amazon/${this.isbn}`)
     const book = response.data
     this.reviewScore = book.amazon_review_score
     this.reviewCount = book.amazon_review_count
