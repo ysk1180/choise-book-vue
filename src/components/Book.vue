@@ -23,15 +23,15 @@
       </div>
       <Review
         site="楽天ブックス"
-        :review_score="book.rakuten_review_score"
-        :review_count="book.rakuten_review_count"
+        :reviewScore="book.rakuten_review_score"
+        :reviewCount="book.rakuten_review_count"
         :link="book.rakuten_link"
         :isbn="book.isbn"
       />
       <Review
         site="Amazon"
-        :review_score="book.amazon_review_score"
-        :review_count="book.amazon_review_count"
+        :reviewScore="book.amazon_review_score"
+        :reviewCount="book.amazon_review_count"
         :link="book.amazon_link"
         :isbn="book.isbn"
       />
