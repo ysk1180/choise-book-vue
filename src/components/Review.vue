@@ -1,14 +1,22 @@
 <template>
-  <div>
-    <div>
+  <a
+    :href="link"
+    target="_blank"
+    rel="noopener"
+    class="rounded p-1 bg-red-100"
+  >
+    <div class="text-sm">
       {{site}}
     </div>
-    <div>
-      {{reviewScoreData}}
-      <br />
-      {{reviewCountData}}件
+    <div class="flex space-x-1 text-xs">
+      <div>
+        {{reviewScoreData}}点
+      </div>
+      <div>
+        {{reviewCountData}}件
+      </div>
     </div>
-  </div>
+  </a>
 </template>
 
 <script lang="ts">

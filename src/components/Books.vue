@@ -2,10 +2,16 @@
   <div v-if="loading">
     Loading...
   </div>
-  <div v-else v-for="book in books" :key="book.isbn">
-    <hr/>
-    <Book :book="book"/>
-  </div>
+  <ul
+    v-else
+    class="divide-y divide-gray-200"
+  >
+    <Book
+      v-for="book in books"
+      :key="book.isbn"
+      :book="book"
+    />
+  </ul>
   <template/>
 </template>
 
@@ -29,9 +35,3 @@ export default defineComponent({
   computed: mapGetters(['books', 'loading']),
 });
 </script>
-
-<style scoped>
-hr {
-  border-top: 1px solid #cccccc;
-}
-</style>

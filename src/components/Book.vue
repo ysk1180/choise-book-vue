@@ -1,42 +1,45 @@
 <template>
-  <div class="wrapper">
-    <div>
-      <img :src="book.image_url" />
-    </div>
-    <div>
-      <div>
+  <article class="p-4 flex space-x-4">
+    <img
+      :src="book.image_url"
+      class="flex-none w-18 rounded-lg object-contain"
+    />
+    <div class="flex-auto sm:pr-20 lg:pr-0 xl:pr-20">
+      <h2 class="text-base font-semibold text-black mb-0.5">
         {{book.title}}
+      </h2>
+      <div class="flex flex-wrap text-xs font-normal whitespace-pre text-gray-600 space-x-1">
+        <div v-if="book.published_date">
+          {{book.published_date}}発売
+        </div>
+        <div v-if="book.price">
+          {{book.price}}円
+        </div>
+        <div v-if="book.page_count">
+          {{book.page_count}}ページ
+        </div>
       </div>
-      <div>
-        <div>
-          {{book.published_date}}
-        </div>
-        <div>
-          {{book.price}}
-        </div>
-        <div>
-          {{book.page_count}}
-        </div>
-      </div>
-      <div>
+      <div class="text-xs font-light text-gray-800 my-1">
         {{book.item_caption}}
       </div>
-      <Review
-        site="楽天ブックス"
-        :reviewScore="book.rakuten_review_score"
-        :reviewCount="book.rakuten_review_count"
-        :link="book.rakuten_link"
-        :isbn="book.isbn"
-      />
-      <Review
-        site="Amazon"
-        :reviewScore="book.amazon_review_score"
-        :reviewCount="book.amazon_review_count"
-        :link="book.amazon_link"
-        :isbn="book.isbn"
-      />
+      <div class="flex space-x-2">
+        <Review
+          site="楽天ブックス"
+          :reviewScore="book.rakuten_review_score"
+          :reviewCount="book.rakuten_review_count"
+          :link="book.rakuten_link"
+          :isbn="book.isbn"
+        />
+        <Review
+          site="Amazon"
+          :reviewScore="book.amazon_review_score"
+          :reviewCount="book.amazon_review_count"
+          :link="book.amazon_link"
+          :isbn="book.isbn"
+        />
+      </div>
     </div>
-  </div>
+  </article>
 </template>
 
 <script lang="ts">
@@ -57,9 +60,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped>
-.wrapper {
-  display: flex;
-}
-</style>
