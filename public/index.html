@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>技術書選び</title>
+    <meta property="og:title" content="技術書選び" />
+    <meta property="og:site_name" content="技術書選び" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= BASE_URL %>" />
+    <meta property="og:description" content="楽天ブックスとAmazonのレビューを横断的に見ることができ、技術書選びをサポートします。" />
+    <meta property="og:image" content="<%= BASE_URL %>book-icon-dark.png" />
+    <meta name="twitter:card" content="summary" />
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>We're sorry but it doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
