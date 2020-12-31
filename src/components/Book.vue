@@ -29,6 +29,7 @@
           :reviewCount="book.rakuten_review_count"
           :link="book.rakuten_link"
           :isbn="book.isbn"
+          :index="index"
         />
         <Review
           site="Amazon"
@@ -36,6 +37,7 @@
           :reviewCount="book.amazon_review_count"
           :link="book.amazon_link"
           :isbn="book.isbn"
+          :index="index"
         />
       </div>
     </div>
@@ -55,6 +57,10 @@ export default defineComponent({
   props: {
     book: {
       type: Object as PropType<BookData>,
+      required: true,
+    },
+    index: {
+      type: Number,
       required: true,
     }
   },

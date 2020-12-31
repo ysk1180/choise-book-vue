@@ -55,6 +55,10 @@ export default defineComponent({
     isbn: {
       type: String,
     },
+    index: {
+      type: Number,
+      required: true,
+    }
   },
   setup(props) {
     const reviewScoreData = ref(props.reviewScore)
@@ -63,6 +67,9 @@ export default defineComponent({
 
     onMounted(async () => {
       if (props.site === '楽天ブックス' || props.link) return
+
+      const waitTimeMs = props.index * 0.5 * 1000 // AmazonAPIを連続で叩きすぎないように調整
+      await new Promise(resolve => setTimeout(resolve, waitTimeMs))
 
       const response = await axios.get(`/amazon/${props.isbn}`)
       const book = response.data

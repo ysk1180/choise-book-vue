@@ -7,9 +7,10 @@
     class="divide-y divide-gray-300"
   >
     <Book
-      v-for="book in books"
+      v-for="(book, index) in books"
       :key="book.isbn"
       :book="book"
+      :index="index"
     />
   </ul>
   <template/>
