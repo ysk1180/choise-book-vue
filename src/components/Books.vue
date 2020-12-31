@@ -4,7 +4,7 @@
   </div>
   <ul
     v-else
-    class="divide-y divide-gray-200"
+    class="divide-y divide-gray-300"
   >
     <Book
       v-for="book in books"
