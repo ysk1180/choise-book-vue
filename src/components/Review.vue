@@ -3,10 +3,17 @@
     :href="link"
     target="_blank"
     rel="noopener"
-    class="rounded p-1 bg-red-100 text-center w-24"
+    class="rounded px-2 py-1 text-center w-28"
+    :class="site === 'Amazon' ? 'bg-yellow-100 hover:bg-yellow-200' : 'bg-red-100 hover:bg-red-200'"
   >
-    <div class="text-sm">
+    <div
+      class="text-xs flex"
+      :class="site === 'Amazon' ? 'text-yellow-800' : 'text-red-800'"
+    >
       {{site}}
+      <svg class="h-3 w-3 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+      </svg>
     </div>
     <div v-if="reviewCountData" class="flex space-x-1 text-xs">
       <svg class="text-yellow-500 fill-current" width="16" height="20">

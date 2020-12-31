@@ -1,6 +1,6 @@
 <template>
   <div v-if="loading">
-    Loading...
+    <Loading />
   </div>
   <ul
     v-else
@@ -19,6 +19,7 @@
 import { defineComponent, PropType } from 'vue';
 import { mapGetters } from 'vuex';
 import Book from '@/components/Book.vue';
+import Loading from '@/components/Loading.vue'
 import { BookData } from '@/types/book.t'
 
 export default defineComponent({
@@ -31,6 +32,7 @@ export default defineComponent({
   },
   components: {
     Book,
+    Loading,
   },
   computed: mapGetters(['books', 'loading']),
 });

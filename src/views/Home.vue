@@ -1,12 +1,14 @@
 <template>
   <Header @fetchBooks="fetchBooks"/>
-  <Books :books="books"/>
+  <Books v-if="books.length !== 0" :books="books"/>
+  <Attention v-else/>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Books from '@/components/Books.vue';
 import Header from '@/components/Header.vue';
+import Attention from '@/components/Attention.vue';
 import axios from '@/lib/axios'
 import { BookData } from '@/types/book.t'
 
@@ -15,6 +17,7 @@ export default defineComponent({
   components: {
     Books,
     Header,
+    Attention,
   },
   data(): {
     books: BookData[] | [];
