@@ -1,6 +1,6 @@
 <template>
   <a
-    :href="link"
+    :href="linkData"
     target="_blank"
     rel="noopener"
     class="rounded px-2 py-1 text-center w-28"
@@ -57,18 +57,18 @@ export default defineComponent({
     },
   },
   setup(props) {
-    let reviewScoreData = ref(props.reviewScore)
-    let reviewCountData = ref(props.reviewCount)
-    let linkData = ref(props.link)
+    const reviewScoreData = ref(props.reviewScore)
+    const reviewCountData = ref(props.reviewCount)
+    const linkData = ref(props.link)
 
     onMounted(async () => {
       if (props.site === '楽天ブックス' || props.link) return
 
       const response = await axios.get(`/amazon/${props.isbn}`)
       const book = response.data
-      reviewScoreData = book.amazon_review_score
-      reviewCountData = book.amazon_review_count
-      linkData = book.amazon_link
+      reviewScoreData.value = book.amazon_review_score
+      reviewCountData.value = book.amazon_review_count
+      linkData.value = book.amazon_link
     })
 
     return {
