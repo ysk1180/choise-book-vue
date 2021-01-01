@@ -66,6 +66,7 @@ export default defineComponent({
         'Linux',
         'Swift',
         'Flutter',
+        '機械学習',
       ],
     }
   },
