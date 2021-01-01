@@ -1,8 +1,10 @@
 <template>
-  <div class="mx-40 my-24">
-    <div class="w-12 h-12 border-2 border-red-600 rounded-full loader"></div>
-    <div class="my-1 text-gray-800">
-      Loading..
+  <div class="flex pt-6 pb-1">
+    <div class="w-12 h-12 border-2 border-red-600 rounded-full loader mx-auto"></div>
+  </div>
+  <div class="flex pb-6">
+    <div class="my-1 text-gray-700 mx-auto">
+      Loading
     </div>
   </div>
 </template>
