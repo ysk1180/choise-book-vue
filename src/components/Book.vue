@@ -2,9 +2,9 @@
   <article class="p-4 flex space-x-4">
     <img
       :src="book.image_url"
-      class="flex-none object-contain w-18 h-full rounded-lg"
+      class="flex-none object-contain w-24 h-full rounded-lg"
     />
-    <div class="flex-auto sm:pr-20 lg:pr-0 xl:pr-20">
+    <div class="flex-auto">
       <h2 class="text-base font-semibold text-black mb-0.5">
         {{book.title}}
       </h2>
