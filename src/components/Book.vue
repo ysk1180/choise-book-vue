@@ -2,7 +2,7 @@
   <article class="p-4 flex space-x-4">
     <img
       :src="book.image_url"
-      class="flex-none object-contain w-24 h-full rounded-lg"
+      class="flex-none object-contain w-20 h-full rounded-lg"
     />
     <div class="flex-auto">
       <h2 class="text-base font-semibold text-black mb-0.5">

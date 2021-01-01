@@ -42,10 +42,10 @@ export default defineComponent({
   },
   computed: mapGetters(['books']),
   emits: ['fetchBooks'],
-  mounted(){
+  mounted() {
     window.onscroll = () => {
       //一定位置以上スクロールされればtrueを返す
-      const bottomOfWindow = document.documentElement.scrollTop + window.innerHeight >= document.documentElement.offsetHeight;
+      const bottomOfWindow = document.documentElement.scrollTop + window.innerHeight >= (document.documentElement.offsetHeight - 10);
 
       //trueでデータ取得
       if(bottomOfWindow) {
