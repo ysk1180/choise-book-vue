@@ -3,13 +3,12 @@
   <Books
     v-if="books.length !== 0"
     :books="books"
-    :totalNumber="totalNumber"
     :hasNextPage="hasNextPage"
     @fetchBooks="fetchBooks"
   />
   <Loading  v-if="loading"/>
-  <Attention v-if="!loading && books.length === 0 && totalNumber !== 0"/>
-  <NoResult v-if="totalNumber === 0"/>
+  <Attention v-if="!loading && books.length === 0 && count !==0"/>
+  <NoResult v-if="books.length === 0 && count === 0"/>
 </template>
 
 <script lang="ts">
@@ -35,13 +34,13 @@ export default defineComponent({
   data(): {
     books: BookData[] | [];
     currentPage: number;
-    totalNumber: number | null;
+    count: number | null;
     hasNextPage: boolean;
   }{
     return {
       books: [],
       currentPage: 0,
-      totalNumber: null,
+      count: null,
       hasNextPage: true,
     }
   },
@@ -60,12 +59,12 @@ export default defineComponent({
       const { data } = response
       const books: BookData[] = data.books
       this.books = [ ...this.books, ...books ]
-      this.totalNumber = data.total_count
+      this.count = data.count
       this.hasNextPage = data.has_next_page
     },
     clearBooks() {
       this.books = []
-      this.totalNumber = null
+      this.count = null
       this.hasNextPage = true
       this.currentPage = 0
     }

@@ -17,7 +17,7 @@
       </li>
     </ul>
   </div>
-  <div class="m-4 flex">
+  <div class="m-4 mb-1.5 flex">
   <!-- TODO: 日本語入力時のエンターの制御必要かも（参考：https://r17n.page/2020/04/04/vue-submit-on-enter-japanese/） -->
     <input
       type="text"
