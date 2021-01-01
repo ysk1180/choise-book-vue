@@ -4,7 +4,7 @@
       <div class="text-gray-200 text-xl font-bold my-auto px-4 font-serif">
         <router-link to="/" class="flex">
           <img src="@/assets/img/book-icon.png" class="object-contain w-6" />
-          <p class="pl-2">
+          <p class="pl-2 my-auto">
             技術書えらび
           </p>
         </router-link>
