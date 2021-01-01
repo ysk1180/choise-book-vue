@@ -44,11 +44,11 @@ export default defineComponent({
   emits: ['fetchBooks'],
   mounted() {
     window.onscroll = () => {
-      //一定位置以上スクロールされればtrueを返す
-      const bottomOfWindow = document.documentElement.scrollTop + window.innerHeight >= (document.documentElement.offsetHeight - 10);
+      // 一定位置以上スクロールされたかどうかを判定する
+      const scrollingPosition = document.documentElement.scrollTop + window.innerHeight
+      const bottomPosition = document.documentElement.offsetHeight - 20 // スマホでうまく判定できないので調整
 
-      //trueでデータ取得
-      if(bottomOfWindow) {
+      if (scrollingPosition >= bottomPosition) {
         //無限スクロールでデータ取得
         this.$emit('fetchBooks')
       }
