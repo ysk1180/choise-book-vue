@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <nav class="bg-gray-800 h-14">
-      <div class="text-gray-200 text-xl font-bold p-3 float-left font-serif">
+      <div class="text-gray-200 text-xl font-bold p-3.5 float-left font-serif">
         <router-link to="/" class="flex">
           <img src="@/assets/img/book-icon.png" width="24" />
           <p class="pl-2">

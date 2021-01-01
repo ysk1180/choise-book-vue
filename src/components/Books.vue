@@ -46,7 +46,7 @@ export default defineComponent({
     window.onscroll = () => {
       // 一定位置以上スクロールされたかどうかを判定する
       const scrollingPosition = document.documentElement.scrollTop + window.innerHeight
-      const bottomPosition = document.documentElement.offsetHeight - 20 // スマホでうまく判定できないので調整
+      const bottomPosition = document.documentElement.offsetHeight - 40 // スマホでうまく判定できないので調整
 
       if (scrollingPosition >= bottomPosition) {
         //無限スクロールでデータ取得
