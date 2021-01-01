@@ -68,14 +68,16 @@ export default defineComponent({
     }
   },
   computed: mapGetters(['keyword']),
-  emits: ['fetchBooks'],
+  emits: ['fetchBooks', 'clearBooks'],
   methods: {
     search() {
       if(this.keyword === '') {
         alert('キーワードを入力してください')
         return
       }
-      this.$emit('fetchBooks', this.keyword)
+
+      this.$emit('clearBooks')
+      this.$emit('fetchBooks')
     },
     clickWord(word: string) {
       this.$store.dispatch('changeKeyword', word)

@@ -1,9 +1,6 @@
 <template>
-  <div v-if="loading">
-    <Loading />
-  </div>
+  <TotalNumber v-if="totalNumber" :number="totalNumber" />
   <ul
-    v-else
     class="divide-y divide-gray-300"
   >
     <Book
@@ -13,14 +10,15 @@
       :index="index"
     />
   </ul>
-  <template/>
+  <NoMoreContent v-if="!hasNextPage"/>
 </template>
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue';
 import { mapGetters } from 'vuex';
 import Book from '@/components/Book.vue';
-import Loading from '@/components/Loading.vue'
+import TotalNumber from '@/components/TotalNumber.vue'
+import NoMoreContent from '@/components/NoMoreContent.vue'
 import { BookData } from '@/types/book.t'
 
 export default defineComponent({
@@ -29,12 +27,32 @@ export default defineComponent({
     books: {
       type: Object as PropType<BookData[]>,
       required: true,
+    },
+    totalNumber: {
+      type: Number,
+    },
+    hasNextPage: {
+      type: Boolean,
     }
   },
   components: {
     Book,
-    Loading,
+    TotalNumber,
+    NoMoreContent,
   },
-  computed: mapGetters(['books', 'loading']),
+  computed: mapGetters(['books']),
+  emits: ['fetchBooks'],
+  mounted(){
+    window.onscroll = () => {
+      //一定位置以上スクロールされればtrueを返す
+      const bottomOfWindow = document.documentElement.scrollTop + window.innerHeight >= document.documentElement.offsetHeight;
+
+      //trueでデータ取得
+      if(bottomOfWindow) {
+        //無限スクロールでデータ取得
+        this.$emit('fetchBooks')
+      }
+    }
+  },
 });
 </script>
