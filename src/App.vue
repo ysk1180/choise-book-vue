@@ -2,7 +2,9 @@
   <div class="min-h-screen flex flex-col">
     <Navbar/>
     <main class="flex-grow">
+      <div class="max-w-3xl mx-auto">
       <router-view/>
+      </div>
     </main>
     <Footer/>
   </div>
