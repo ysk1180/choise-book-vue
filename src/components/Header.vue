@@ -24,14 +24,19 @@
       :value="keyword"
       @input="updateKeyword"
       @keyup.enter="search"
-      class="rounded-l-lg w-9/12 md:w-10/12 p-2 border-t mr-0 border-b border-l text-gray-800 border-gray-300 bg-white"
+      class="rounded-l-lg w-9/12 md:w-10/12 px-3 py-2 border-t mr-0 border-b border-l text-gray-800 border-gray-300 bg-white"
       placeholder="キーワードを入力"
     />
     <button
       @click="search"
-      class="px-2 rounded-r-lg w-3/12 md:w-2/12 bg-red-400 hover:bg-red-500 text-gray-800 p-2 border-red-500 border-t border-b border-r"
+      class="pl-1 pr-2 flex rounded-r-lg w-3/12 md:w-2/12 bg-red-500 hover:bg-red-600 text-white p-2 border-red-500 border-t border-b border-r"
     >
-      検索
+      <div class="mx-auto flex">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 mr-1 my-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        検索
+      </div>
     </button>
   </div>
 </template>
