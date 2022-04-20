@@ -5,7 +5,7 @@
         <router-link to="/" class="flex">
           <img src="@/assets/img/book-icon.png" class="object-contain w-6" />
           <p class="pl-2 my-auto">
-            技術書えらび
+            技術書選び
           </p>
         </router-link>
       </div>

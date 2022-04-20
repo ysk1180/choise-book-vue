@@ -67,6 +67,8 @@ export default defineComponent({
         'Swift',
         'Flutter',
         '機械学習',
+        'セキュリティ',
+        'ネットワーク',
       ],
     }
   },
