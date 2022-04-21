@@ -8,7 +8,7 @@
       <h2 class="text-base font-semibold text-black mb-0.5">
         {{book.title}}
       </h2>
-      <div class="flex flex-wrap text-xs font-normal whitespace-pre text-gray-500 space-x-1">
+      <div class="flex flex-wrap mt-1 mb-2 text-xs font-normal whitespace-pre text-gray-500 space-x-1">
         <div v-if="book.published_date">
           {{book.published_date}}発売
         </div>
@@ -19,7 +19,7 @@
           {{book.page_count}}ページ
         </div>
       </div>
-      <div class="text-xs font-light text-gray-800 my-1">
+      <div v-if="book.item_caption" class="text-xs font-light text-gray-800 my-2 px-2 py-0.5 line-clamp-3 md:line-clamp-2 bg-gray-100 rounded">
         {{book.item_caption}}
       </div>
       <div class="flex space-x-2">
