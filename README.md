@@ -10,15 +10,10 @@ yarn install
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+### Update sitemap
 
-### Lints and fixes files
-```
-yarn lint
-```
+fix `make_sitemap.ts` file
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+node make_sitemap.ts
+```
