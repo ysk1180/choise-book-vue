@@ -1,4 +1,7 @@
 <template>
+  <h1 class="text-lg mt-4 mb-1 mx-2">
+    「{{searchKeyword}}」の検索結果
+  </h1>
   <ul
     class="divide-y divide-gray-300"
   >
@@ -28,6 +31,9 @@ export default defineComponent({
     },
     hasNextPage: {
       type: Boolean,
+    },
+    searchKeyword: {
+      type: String,
     }
   },
   components: {
