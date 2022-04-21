@@ -42,6 +42,7 @@
 </template>
 
 <script lang="ts">
+import router from '@/router';
 import { defineComponent } from 'vue';
 import { mapGetters } from 'vuex';
 
@@ -70,6 +71,7 @@ export default defineComponent({
         'Kubernetes',
         'Linux',
         'Swift',
+        'Kotlin',
         'Flutter',
         '機械学習',
         'セキュリティ',
@@ -87,6 +89,7 @@ export default defineComponent({
       }
 
       this.$emit('clearBooks')
+      router.push(`/search/${this.keyword}`)
       this.$emit('fetchBooks')
     },
     clickWord(word: string) {
