@@ -1,14 +1,15 @@
 <template>
   <article class="p-4 flex space-x-4">
-    <img
-      :src="book.image_url"
-      class="flex-none object-contain w-20 h-full rounded-sm"
-    />
+    <a :href="book.amazon_link || book.rakuten_link" target="_blank" rel="noopener" class="flex-none object-contain w-20 h-full rounded-sm cursor-pointer hover:opacity-80">
+      <img :src="book.image_url" />
+    </a>
     <div class="flex-auto">
-      <h2 class="text-base font-semibold text-black mb-0.5">
-        {{book.title}}
+      <h2 class="text-base font-semibold text-black mb-0.5 cursor-pointer hover:underline">
+        <a :href="book.amazon_link || book.rakuten_link" target="_blank" rel="noopener">
+          {{book.title}}
+        </a>
       </h2>
-      <div class="flex flex-wrap mt-1 mb-2 text-xs font-normal whitespace-pre text-gray-500 space-x-1">
+      <div class="flex flex-wrap mt-1 mb-1.5 text-xs font-normal whitespace-pre text-gray-500 space-x-1">
         <div v-if="book.published_date">
           {{book.published_date}}発売
         </div>
@@ -19,6 +20,7 @@
           {{book.page_count}}ページ
         </div>
       </div>
+      <Tags :book="book" />
       <div v-if="book.item_caption" class="text-xs font-light text-gray-800 my-2 px-2 py-0.5 line-clamp-3 md:line-clamp-2 bg-gray-100 rounded">
         {{book.item_caption}}
       </div>
@@ -47,12 +49,14 @@
 <script lang="ts">
 import { defineComponent, PropType } from 'vue';
 import Review from '@/components/Review.vue';
+import Tags from '@/components/Tags.vue';
 import { BookData } from '@/types/book.t'
 
 export default defineComponent({
   name: 'Book',
   components: {
     Review,
+    Tags,
   },
   props: {
     book: {
