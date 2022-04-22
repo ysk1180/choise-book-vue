@@ -1,6 +1,6 @@
 <template>
   <div v-if="tags.length > 0" class="flex flex-wrap mt-1.5 mb-2">
-    <div v-for="tag in tags" :key="tag" class="bg-gray-500 text-white text-xs mx-0.5 px-1.5 py-1 rounded-sm">
+    <div v-for="tag in tags" :key="tag" class="bg-gray-500 text-white text-xs mx-0.5 my-0.5 px-1.5 py-1 rounded-sm">
       {{tag}}
     </div>
   </div>

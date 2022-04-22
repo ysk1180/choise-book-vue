@@ -9,14 +9,14 @@
           {{book.title}}
         </a>
       </h2>
-      <div class="flex flex-wrap mt-1 mb-1.5 text-xs font-normal whitespace-pre text-gray-500 space-x-1">
-        <div v-if="book.published_date">
+      <div class="flex flex-wrap mt-1 mb-1.5 text-xs font-normal whitespace-pre text-gray-500">
+        <div v-if="book.published_date" class="mx-0.5">
           {{book.published_date}}発売
         </div>
-        <div v-if="book.price">
+        <div v-if="book.price" class="mx-0.5">
           {{book.price.toLocaleString()}}円
         </div>
-        <div v-if="book.page_count">
+        <div v-if="book.page_count" class="mx-0.5">
           {{book.page_count}}ページ
         </div>
       </div>
