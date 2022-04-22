@@ -9,7 +9,7 @@
           {{book.title}}
         </a>
       </h2>
-      <div class="flex flex-wrap mt-1 mb-1.5 text-xs font-normal whitespace-pre text-gray-500">
+      <div class="flex flex-wrap mt-1 mb-1 text-xs font-normal whitespace-pre text-gray-500">
         <div v-if="book.published_date" class="mx-0.5">
           {{book.published_date}}発売
         </div>
@@ -21,7 +21,7 @@
         </div>
       </div>
       <Tags :book="book" />
-      <div v-if="book.item_caption" class="text-xs font-light text-gray-800 my-2 px-2 py-0.5 line-clamp-3 md:line-clamp-2 bg-gray-100 rounded">
+      <div v-if="book.item_caption" class="text-xs font-light text-gray-800 mt-1.5 mb-2 px-2 py-0.5 line-clamp-3 md:line-clamp-2 bg-gray-100 rounded">
         {{book.item_caption}}
       </div>
       <div class="flex space-x-2">

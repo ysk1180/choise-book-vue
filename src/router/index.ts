@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
 import Search from '../views/Search.vue'
+import NotFound from '../views/NotFound.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -20,7 +21,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/search/:keyword',
     name: 'Search',
     component: Search,
-  }
+  },
+  {
+    path: '/:pathMatch(.*)*', // 参考: https://router.vuejs.org/guide/migration/#removed-star-or-catch-all-routes
+    name: 'NotFound',
+    component: NotFound
+  },
 ]
 
 const router = createRouter({
