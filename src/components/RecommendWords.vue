@@ -1,5 +1,5 @@
 <template>
-  <div className="mx-4 my-2">
+  <div className="mx-4 mt-2 mb-8">
     <h2 className="text-lg px-2 mx-1 mb-1.5 font-bold inline-block" style="background: linear-gradient(transparent 60%, #8effa1 60%);">バックエンド</h2>
     <div class="flex flex-wrap">
       <div v-for="word in words" :key="word" class="m-1">
@@ -30,8 +30,12 @@ export default defineComponent({
         'Laravel',
         'Python',
         'Django',
+        'Flask',
         'Go言語',
         'Java',
+        'C言語',
+        'C#',
+        'C++',
       ]
     }
   },
