@@ -25,6 +25,7 @@ const sitemap = () => {
     'Go言語',
     'Java',
 
+    'Flask',
     'C言語',
     'C#',
     'C++',
