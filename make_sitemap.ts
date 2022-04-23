@@ -16,7 +16,7 @@ const sitemap = () => {
   });
 
   const words = [
-    'Ruby',
+    'Ruby', // バックエンド
     'Rails',
     'PHP',
     'Laravel',
@@ -24,48 +24,60 @@ const sitemap = () => {
     'Django',
     'Go言語',
     'Java',
+
     'C言語',
     'C#',
     'C++',
 
-    'HTML',
-    'CSS',
-    'TypeScript',
-    'JavaScript',
+    'TypeScript', // フロントエンド
     'React',
     'Next.js',
     'Vue.js',
     'Nuxt.js',
 
-    'Swift',
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'Angular',
+
+    'Swift', // アプリ
     'Kotlin',
     'Flutter',
     'Dart',
 
-    'Docker',
+    'Docker', // インフラ
     'Kubernetes',
     'AWS',
     'GCP',
-    'Azure',
 
-    'データベース',
+    'Azure',
+    'Firebase',
+    'nginx',
+
+    'データベース', // データベース
     'SQL',
     'MySQL',
     'PostgreSQL',
 
-    '基本情報技術者',
+    '基本情報技術者', // 資格
     '応用情報技術者',
     'LPIC',
+
+    'Webデザイン', // デザイン
+    'Illustrator',
+    'Photoshop',
 
     'Linux',
     'UNIX',
     'shell',
     'TCP,IP',
+
     '機械学習',
     'データサイエンス',
     'ディープラーニング',
     '人工知能',
     'Kaggle',
+
     'システム設計',
     'ドメイン駆動設計',
     'ソフトウェアテスト',
@@ -75,12 +87,10 @@ const sitemap = () => {
     'ネットワーク',
     'アルゴリズム',
     'API',
+    'GraphQL',
     'SEO',
     'WordPress',
     'ラズパイ',
-    'Webデザイン',
-    'Illustrator',
-    'Photoshop',
     'メタバース',
     'Web3',
     'ブロックチェーン',
