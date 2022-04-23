@@ -22,10 +22,9 @@ const sitemap = () => {
     'Laravel',
     'Python',
     'Django',
+    'Flask',
     'Go言語',
     'Java',
-
-    'Flask',
     'C言語',
     'C#',
     'C++',
@@ -35,7 +34,6 @@ const sitemap = () => {
     'Next.js',
     'Vue.js',
     'Nuxt.js',
-
     'HTML',
     'CSS',
     'JavaScript',
