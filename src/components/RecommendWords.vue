@@ -1,6 +1,6 @@
 <template>
   <div className="mx-4 my-2">
-    <h2 className="text-lg px-2 mb-1.5 font-bold inline-block" style="background: linear-gradient(transparent 60%, #8effa1 60%);">バックエンド</h2>
+    <h2 className="text-lg px-2 mx-1 mb-1.5 font-bold inline-block" style="background: linear-gradient(transparent 60%, #8effa1 60%);">バックエンド</h2>
     <div class="flex flex-wrap">
       <div v-for="word in words" :key="word" class="m-1">
         <router-link :to="`/search/${word}`">
@@ -28,6 +28,10 @@ export default defineComponent({
         'Rails',
         'PHP',
         'Laravel',
+        'Python',
+        'Django',
+        'Go言語',
+        'Java',
       ]
     }
   },
