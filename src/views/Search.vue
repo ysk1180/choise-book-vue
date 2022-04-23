@@ -49,7 +49,7 @@ export default defineComponent({
     // meta情報の変更の参考にしたサイト: https://www.codit.work/codes/li8lzoz07hs39odkm6kn/
     document.title = title
     document.querySelector("meta[property='og:title']")!.setAttribute('content', title)
-    const description = `${word}に関する技術書のAmazonと楽天ブックスのレビューが同時に見れることで、技術書選びをサポートします。`
+    const description = `${word}に関する技術書の、Amazonと楽天ブックスのレビューを同時に見ながら効率的に技術書選びができます。あなたに合った技術書をいち早く見つけて学習を始めましょう。`
     document.querySelector("meta[name='description']")!.setAttribute('content', description)
     document.querySelector("meta[property='og:description']")!.setAttribute('content', description)
 
@@ -79,10 +79,6 @@ export default defineComponent({
       const word = this.$route.params.keyword
       const title = `${word}の技術書一覧 - 技術書選び`
       document.title = title
-      document.querySelector("meta[property='og:title']")!.setAttribute('content', title)
-      const description = `${word}に関する技術書のAmazonと楽天ブックスのレビューが同時に見れることで、技術書選びをサポートします。`
-      document.querySelector("meta[name='description']")!.setAttribute('content', description)
-      document.querySelector("meta[property='og:description']")!.setAttribute('content', description)
     },
     clearBooks() {
       this.$store.dispatch('clearBooks')
