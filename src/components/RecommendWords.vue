@@ -5,7 +5,7 @@
       <div v-for="word in words" :key="word" class="m-1">
         <router-link :to="`/search/${word}`">
           <div class="flex border border-solid border-gray-300 rounded p-2 cursor-pointer hover:opacity-70">
-            <img :src="require(`@/assets/img/words/${word}.png`)" class="object-contain w-6 mr-1.5" />
+            <img :src="require(`@/assets/img/words/${word}.png`)" class="object-contain w-6 h-6 mr-1.5" />
             {{word}}
           </div>
         </router-link>
