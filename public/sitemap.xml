@@ -23,6 +23,8 @@
     </url><url>
       <loc>https://teckbook.net/search/Java</loc>
     </url><url>
+      <loc>https://teckbook.net/search/Node.js</loc>
+    </url><url>
       <loc>https://teckbook.net/search/C言語</loc>
     </url><url>
       <loc>https://teckbook.net/search/C#</loc>
@@ -63,6 +65,8 @@
     </url><url>
       <loc>https://teckbook.net/search/Kubernetes</loc>
     </url><url>
+      <loc>https://teckbook.net/search/Terraform</loc>
+    </url><url>
       <loc>https://teckbook.net/search/AWS</loc>
     </url><url>
       <loc>https://teckbook.net/search/GCP</loc>
@@ -70,8 +74,6 @@
       <loc>https://teckbook.net/search/Azure</loc>
     </url><url>
       <loc>https://teckbook.net/search/Firebase</loc>
-    </url><url>
-      <loc>https://teckbook.net/search/nginx</loc>
     </url><url>
       <loc>https://teckbook.net/search/データベース</loc>
     </url><url>
@@ -131,9 +133,15 @@
     </url><url>
       <loc>https://teckbook.net/search/GraphQL</loc>
     </url><url>
+      <loc>https://teckbook.net/search/nginx</loc>
+    </url><url>
       <loc>https://teckbook.net/search/SEO</loc>
     </url><url>
       <loc>https://teckbook.net/search/WordPress</loc>
+    </url><url>
+      <loc>https://teckbook.net/search/Unity</loc>
+    </url><url>
+      <loc>https://teckbook.net/search/AWSLamblda</loc>
     </url><url>
       <loc>https://teckbook.net/search/ラズパイ</loc>
     </url><url>
