@@ -1,21 +1,21 @@
 <template>
   <Header />
   <Attention />
-  <RecommendWords />
+  <RecommendLinks />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Header from '@/components/Header.vue';
 import Attention from '@/components/Attention.vue';
-import RecommendWords from '@/components/RecommendWords.vue';
+import RecommendLinks from '@/components/RecommendLinks.vue';
 
 export default defineComponent({
   name: 'Home',
   components: {
     Header,
     Attention,
-    RecommendWords,
+    RecommendLinks,
   },
   created() {
     this.$store.dispatch('changeKeyword', '')
