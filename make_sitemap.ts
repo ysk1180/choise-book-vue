@@ -39,10 +39,12 @@ const sitemap = () => {
     'JavaScript',
     'Angular',
 
-    'Swift', // アプリ
+    'Swift', // モバイルアプリ
     'Kotlin',
     'Flutter',
     'Dart',
+    'ReactNative',
+    'Objective-C',
 
     'Docker', // インフラ
     'Kubernetes',

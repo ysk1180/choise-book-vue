@@ -51,6 +51,16 @@ export default defineComponent({
           'JavaScript',
           'Angular',
         ]
+      },{
+        title: 'モバイルアプリ',
+        words: [
+          'Swift', // モバイルアプリ
+          'Kotlin',
+          'Flutter',
+          'Dart',
+          'ReactNative',
+          'Objective-C',
+        ]
       }
     ]}
   },

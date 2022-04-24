@@ -1,5 +1,5 @@
 <template>
-  <div className="mb-3">
+  <div className="mb-4">
     <h2 className="text-lg px-2 mx-1 mb-1.5 font-bold inline-block" style="background: linear-gradient(transparent 60%, #8effa1 60%);">{{title}}</h2>
     <div class="flex flex-wrap">
       <div v-for="word in words" :key="word" class="m-1">
