@@ -34,6 +34,7 @@ export default defineComponent({
           'Flask',
           'Go言語',
           'Java',
+          'Node.js',
           'C言語',
           'C#',
           'C++',
@@ -54,12 +55,23 @@ export default defineComponent({
       },{
         title: 'モバイルアプリ',
         words: [
-          'Swift', // モバイルアプリ
+          'Swift',
           'Kotlin',
           'Flutter',
           'Dart',
           'ReactNative',
           'Objective-C',
+        ]
+      },{
+        title: 'インフラ',
+        words: [
+          'Docker',
+          'Kubernetes',
+          'Terraform',
+          'AWS',
+          'GCP',
+          'Azure',
+          'Firebase',
         ]
       }
     ]}

@@ -25,6 +25,7 @@ const sitemap = () => {
     'Flask',
     'Go言語',
     'Java',
+    'Node.js',
     'C言語',
     'C#',
     'C++',
@@ -48,12 +49,11 @@ const sitemap = () => {
 
     'Docker', // インフラ
     'Kubernetes',
+    'Terraform',
     'AWS',
     'GCP',
-
     'Azure',
     'Firebase',
-    'nginx',
 
     'データベース', // データベース
     'SQL',
@@ -89,8 +89,11 @@ const sitemap = () => {
     'アルゴリズム',
     'API',
     'GraphQL',
+    'nginx',
     'SEO',
     'WordPress',
+    'Unity',
+    'AWSLamblda',
     'ラズパイ',
     'メタバース',
     'Web3',
