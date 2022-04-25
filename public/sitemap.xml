@@ -73,6 +73,8 @@
     </url><url>
       <loc>https://teckbook.net/search/Azure</loc>
     </url><url>
+      <loc>https://teckbook.net/search/nginx</loc>
+    </url><url>
       <loc>https://teckbook.net/search/Firebase</loc>
     </url><url>
       <loc>https://teckbook.net/search/データベース</loc>
@@ -82,6 +84,16 @@
       <loc>https://teckbook.net/search/MySQL</loc>
     </url><url>
       <loc>https://teckbook.net/search/PostgreSQL</loc>
+    </url><url>
+      <loc>https://teckbook.net/search/システム設計</loc>
+    </url><url>
+      <loc>https://teckbook.net/search/ドメイン駆動設計</loc>
+    </url><url>
+      <loc>https://teckbook.net/search/マイクロサービス</loc>
+    </url><url>
+      <loc>https://teckbook.net/search/デザインパターン</loc>
+    </url><url>
+      <loc>https://teckbook.net/search/ソフトウェアテスト</loc>
     </url><url>
       <loc>https://teckbook.net/search/基本情報技術者</loc>
     </url><url>
@@ -113,14 +125,6 @@
     </url><url>
       <loc>https://teckbook.net/search/Kaggle</loc>
     </url><url>
-      <loc>https://teckbook.net/search/システム設計</loc>
-    </url><url>
-      <loc>https://teckbook.net/search/ドメイン駆動設計</loc>
-    </url><url>
-      <loc>https://teckbook.net/search/マイクロサービス</loc>
-    </url><url>
-      <loc>https://teckbook.net/search/ソフトウェアテスト</loc>
-    </url><url>
       <loc>https://teckbook.net/search/アジャイル</loc>
     </url><url>
       <loc>https://teckbook.net/search/スクラム</loc>
@@ -131,11 +135,11 @@
     </url><url>
       <loc>https://teckbook.net/search/アルゴリズム</loc>
     </url><url>
+      <loc>https://teckbook.net/search/リファクタリング</loc>
+    </url><url>
       <loc>https://teckbook.net/search/API</loc>
     </url><url>
       <loc>https://teckbook.net/search/GraphQL</loc>
-    </url><url>
-      <loc>https://teckbook.net/search/nginx</loc>
     </url><url>
       <loc>https://teckbook.net/search/SEO</loc>
     </url><url>
@@ -143,7 +147,7 @@
     </url><url>
       <loc>https://teckbook.net/search/Unity</loc>
     </url><url>
-      <loc>https://teckbook.net/search/AWSLamblda</loc>
+      <loc>https://teckbook.net/search/AWSLambda</loc>
     </url><url>
       <loc>https://teckbook.net/search/ラズパイ</loc>
     </url><url>
