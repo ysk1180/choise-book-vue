@@ -71,6 +71,7 @@ export default defineComponent({
           'AWS',
           'GCP',
           'Azure',
+          'nginx',
           'Firebase',
         ]
       },{
@@ -80,6 +81,15 @@ export default defineComponent({
           'SQL',
           'MySQL',
           'PostgreSQL',
+        ]
+      },{
+        title: '設計・テスト',
+        words: [
+         'システム設計',
+         'ドメイン駆動設計',
+         'マイクロサービス',
+         'デザインパターン',
+         'ソフトウェアテスト',
         ]
       }
     ]}
