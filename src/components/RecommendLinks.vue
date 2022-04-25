@@ -73,6 +73,14 @@ export default defineComponent({
           'Azure',
           'Firebase',
         ]
+      },{
+        title: 'データベース',
+        words: [
+          'データベース',
+          'SQL',
+          'MySQL',
+          'PostgreSQL',
+        ]
       }
     ]}
   },
