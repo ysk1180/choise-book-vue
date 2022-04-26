@@ -20,6 +20,7 @@ export default defineComponent({
   created() {
     this.$store.dispatch('changeKeyword', '')
     this.$store.dispatch('clearBooks')
+    document.title = '技術書選び'
   },
 });
 </script>
