@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center mt-4 mb-6 text-gray-800">
+  <div class="text-center mt-5 mb-8 text-gray-800">
     <div class="flex justify-center mb-1">
       <p>検索結果は以上です</p>
       <svg class="h-4 w-4 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
