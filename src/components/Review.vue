@@ -55,6 +55,9 @@ export default defineComponent({
     link: {
       type: String,
     },
+    updatedAt: {
+      type: String,
+    },
     isbn: {
       type: String,
     },
@@ -69,7 +72,11 @@ export default defineComponent({
     const linkData = ref(props.link)
 
     onMounted(async () => {
-      if (props.site === '楽天ブックス' || props.link) return
+      if (props.site === '楽天ブックス') return
+
+      const oneMonthAgo = new Date()
+      oneMonthAgo.setMonth(oneMonthAgo.getMonth()-1)
+      if (props.updatedAt && new Date(props.updatedAt) > oneMonthAgo) return // 1ヶ月以内に更新されたデータなら再取得せずにそのまま使う
 
       const waitTimeMs = props.index * 0.5 * 1000 // AmazonAPIを連続で叩きすぎないように調整
       await new Promise(resolve => setTimeout(resolve, waitTimeMs))
