@@ -1,7 +1,7 @@
 <template>
   <div className="mx-4 mt-2 mb-8">
     <div v-for="link in links" :key="link.title">
-      <RecommendWords :title="link.title" :words="link.words" />
+      <RecommendWords :title="link.title" :words="link.words" :isSmall="isSmall" @clearAndFetchBooks="clearAndFetchBooks" />
     </div>
   </div>
 </template>
@@ -15,6 +15,12 @@ export default defineComponent({
   components: {
     RecommendWords
   },
+  props: {
+    isSmall: {
+      type: Boolean,
+    },
+  },
+  emits: ['clearAndFetchBooks'],
   data(): {
     links: {
       title: string;
@@ -133,5 +139,10 @@ export default defineComponent({
       }
     ]}
   },
+  methods: {
+    clearAndFetchBooks() {
+      this.$emit('clearAndFetchBooks')
+    }
+  }
 });
 </script>

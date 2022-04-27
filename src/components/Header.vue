@@ -88,8 +88,8 @@ export default defineComponent({
         return
       }
 
-      this.$emit('clearBooks')
       router.push(`/search/${this.keyword}`)
+      this.$emit('clearBooks')
       this.$emit('fetchBooks')
     },
     clickWord(word: string) {

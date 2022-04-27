@@ -12,14 +12,12 @@
       :index="index"
     />
   </ul>
-  <NoMoreContent v-if="!hasNextPage"/>
 </template>
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue';
 import { mapGetters } from 'vuex';
 import Book from '@/components/Book.vue';
-import NoMoreContent from '@/components/NoMoreContent.vue'
 import { BookData } from '@/types/book.t'
 
 export default defineComponent({
@@ -29,16 +27,12 @@ export default defineComponent({
       type: Object as PropType<BookData[]>,
       required: true,
     },
-    hasNextPage: {
-      type: Boolean,
-    },
     searchKeyword: {
       type: String,
     }
   },
   components: {
     Book,
-    NoMoreContent,
   },
   computed: mapGetters(['books']),
   emits: ['fetchBooks'],
