@@ -40,6 +40,7 @@
           :link="book.amazon_link"
           :isbn="book.isbn"
           :index="index"
+          :updatedAt="book.amazon_updated_at"
         />
       </div>
     </div>
