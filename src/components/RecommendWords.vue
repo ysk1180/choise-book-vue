@@ -39,6 +39,10 @@ export default defineComponent({
       this.$store.dispatch('changeKeyword', word)
       this.$emit('clearAndFetchBooks')
       router.push(`/search/${word}`)
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     }
   },
 });
