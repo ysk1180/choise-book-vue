@@ -81,7 +81,7 @@ export default defineComponent({
       const waitTimeMs = props.index * 0.5 * 1000 // AmazonAPIを連続で叩きすぎないように調整
       await new Promise(resolve => setTimeout(resolve, waitTimeMs))
 
-      const response = await axios.get(`/amazon/${props.isbn}`)
+      const response = await axios.get(`/amazon-book?isbn=${props.isbn}`)
       const book = response.data
       reviewScoreData.value = book.amazon_review_score
       reviewCountData.value = book.amazon_review_count
